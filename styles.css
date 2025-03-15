@@ -19,7 +19,6 @@ h2{
     padding: 0px 0px;
     width: 40vw;
     margin: 0 auto;
-    
 }
 
 #tracker-container {
@@ -137,4 +136,81 @@ body {
     position: absolute;
     bottom: 0;
     transition: all 0.3s ease-in-out;
+}
+
+@media (0px < width < 450px) {
+ body{
+    background-color: rgb(153, 153, 245);
+    padding: 0 0;
+ }
+
+ #input-container{
+    display: inline;
+ }
+
+ #main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1px;
+    width: 100%;
+    padding: 0;
+    place-items: center;
+}
+
+#num-container{
+    font-size: 3rem;
+    padding: 0px 0px;
+    width: 50vw;
+    margin: 0 auto;
+    height: 10rem;
+}
+#rndm-nmbr{
+    height: 5rem;
+    font-size: 5rem;
+}
+#new-nmbr{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#top-half{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+#bottom-half{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+#tracker-container {
+    font-size: 1rem;
+    padding: 5px;
+    margin: auto 10px 
+}
+#tracker-container *{
+    font-size: 1rem;
+}
+
+#game-container *{
+    max-width: 10rem;
+    font-size: 1rem;
+
+}
+
+#gif-container{
+    max-width: 80rem;
+    position:absolute;
+    top:78%;
+    left: 10%;
+}
+img{
+    max-width: auto;
+    position:absolute;
+    top:78%;
+    left:10%;
+}
+
 }

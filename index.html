@@ -11,38 +11,43 @@
 </head>
 <body>
     <div id="input-container">
-        <label for="numberFloor">Choose Floor: </label>
-        <input type="number" id="numberFloor" name="numberFloor" min="0" max="100" placeholder="10" step="10"  />
-
-        <label for="numberCieling">Choose Cieling: </label>
-        <input type="number" id="numberCieling" name="numberCieling" min="10" max="1000" placeholder="100" step="10" />
+        <div>
+            <label for="numberFloor">Choose Floor: </label>
+            <input type="number" id="numberFloor" name="numberFloor" min="0" max="100" placeholder="10" step="10"  />
+        </div>
+        <div>
+            <label for="numberCieling">Choose Cieling: </label>
+            <input type="number" id="numberCieling" name="numberCieling" min="10" max="1000" placeholder="100" step="10" />
+        </div>
     </div>
     <div id="main-container">
+        <div id="top-half">
+            <div id="num-container">
+                <h1 id="rndm-nmbr"></h1>
+                <button id="new-nmbr">New Number</button>
+            </div>
 
-        <div id="num-container">
-            <h1 id="rndm-nmbr"></h1>
-            <button id="new-nmbr">New Number</button>
-        </div>
-
-        <div id="tracker-container">
-            <h2 id="win-tracker">Total Wins: </h2>
-            <h2 id="wins-counter"></h2> 
-            <button id="win-btn">Win</button>
-            
-            <h2 id="loss-tracker">Total Losses: </h2>
-            <h2 id="loss-counter"></h2>
-            <button id="lose-btn">Lose</button>
-            
-            <h2 id="total-guesses-counter"></h2>
+            <div id="tracker-container">
+                <h2 id="win-tracker">Total Wins: </h2>
+                <h2 id="wins-counter"></h2> 
+                <button id="win-btn">Win</button>
+                
+                <h2 id="loss-tracker">Total Losses: </h2>
+                <h2 id="loss-counter"></h2>
+                <button id="lose-btn">Lose</button>
+                
+                <h2 id="total-guesses-counter"></h2>
+            </div>
         </div>
         
-        <div id="game-container">
-            <h2>Block Tower Game</h2>
-            <div id="tower"></div>
+        <div id="bottom-half">
+            <div id="game-container">
+                <h2>Block Tower Game</h2>
+                <div id="tower"></div>
+            </div>
+
+            <p id="gif-box"></p>
         </div>
-
-        <p id="gif-box"></p>
-
 
     </div>
 </body>
