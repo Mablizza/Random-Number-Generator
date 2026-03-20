@@ -28,7 +28,7 @@ newNumberEl.addEventListener("click", function generateNum() {
     let floor = document.getElementById("numberFloor").value
     let cieling = document.getElementById("numberCieling").value
 
-    if (floor == "" || cieling == ""){
+    if (floor == "" & cieling == ""){
         floor = 10
         cieling = 100
         let randomNumber = Math.floor(Math.random()*(cieling-floor)) + Math.floor(floor) // choose roof of num Generator
